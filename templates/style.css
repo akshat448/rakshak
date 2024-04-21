@@ -1,0 +1,234 @@
+body {
+    background-image: url('Rakshak.jpg');
+    background-repeat: no-repeat;
+    background-size: cover ;
+   }
+.navbar {
+    background-color: #fff;
+    height: 80px;
+    margin: 20px;
+    border-radius: 16px;
+    padding: 0.5rem;
+}
+
+.container img {
+    object-fit: contain;
+}
+
+.navbar-brand {
+    font-weight: 500;
+    color: #009970;
+    font-size: 24px;
+    transition: 0.3s color;
+}
+
+.login-button,
+.sign-up {
+    background-color: #009970;
+    color: #fff;
+    font-size: 14px;
+    padding: 8px 20px;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: 0.3s background-color;
+    margin-right: 16px;
+}
+
+.login-button:hover,
+.sign-up:hover {
+    background-color: #00b383;
+}
+
+.navbar-toggler {
+    border: none;
+    outline: none;
+    font-size: 1.25rem;
+}
+
+.navbar-toggler:focus {
+    outline: none;
+}
+
+.btn-close:focus {
+    box-shadow: none;
+    outline: none;
+}
+
+.nav-link {
+    color: #666777;
+    font-weight: 500;
+    position: relative;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    color: #000;
+}
+
+@media (min-width: 991px) {
+    .nav-link::before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 0%;
+        height: 2px;
+        background-color: #009970;
+        visibility: hidden;
+        transition: 0.3s ease-in-out;
+    }
+
+    .nav-link:hover::before,
+    .nav-link.active::before {
+        width: 100%;
+        visibility: visible;
+    }
+}
+
+.hero-section { /* Added single quotes around the image path */
+    background-size: cover; /* Changed from auto to cover */
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.hero-section::before {
+    background-color: rgba(0, 0, 0, 0.6);
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.hero-section .container {
+    height: 100vh;
+    z-index: 100;   
+    position: relative;
+    text-align: left;
+    font-size: larger;
+    font-family: "Josefin Sans", sans-serif;
+    
+}
+.hero-section .container2 {
+    background-color: rgba(227, 247, 255,0.7);  
+    position: absolute;
+    height: auto;
+    text-align: left; 
+    top: 200px;
+    left: 20px;
+    margin-left: 90px;  
+    margin-right: 90px;
+    border-radius: 30px;
+    font-family: 'Karla';
+
+}
+.hero-section .container3 {
+    background-color: rgba(229, 255, 227,0.7);  
+    position: absolute;
+    height: auto;
+    text-align: left; 
+    top: 200px;
+    left: 20px;
+    margin-left: 90px;  
+    margin-right: 90px;
+    border-radius: 30px;
+    font-family: 'Kameron';
+
+}
+
+
+.hero-section p{
+    font-size: 30px;
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-right: 10px;
+    margin-bottom: 20px;
+    color: #000;
+}
+
+.hero-section h1 {
+    font-size: 4em; /* Adjusted font size */
+    /*font-family: ;*/
+}
+
+.footer {
+    background-color: rgba(248, 233, 255, 0.7);
+    text-align: center;
+    font-size: larger;
+    line-height: 2;
+    padding: 10px 0;
+    height: 100px;
+    position: absolute;
+    left: 0;
+    bottom: 35px;
+    width: 100%;
+    font-family: 'Judson';
+    
+}
+
+
+
+.hero-section .container4 {
+    position: relative;
+    display: flex;    
+}
+
+.hero-section .container4 .box1,
+.hero-section .container4 .box2,
+.hero-section .container4 .box3,
+.hero-section .container4 .box4 {
+    background-color: rgba(255, 227, 230, 0.7);
+    border-radius: 20px; /* Reduce border radius for smaller corners */
+    padding: 30px; /* Reduce padding for smaller boxes */
+    font-family: 'Kameron';
+    max-width: 500px; /* Reduce the maximum width of the boxes */
+}
+
+.hero-section .container4 .box1 {
+    position: absolute;
+    top: 15vh;
+    left: 1vh;
+    max-height: 300px;
+}
+
+.hero-section .container4 .box2 {
+    position: absolute;
+    top: 15vh;
+    right: 1vh;
+    max-height: 300px;
+}
+
+.hero-section .container4 .box3 {
+    position: absolute;
+    top: 60vh ;
+    left: 1vh;
+    max-height: 300px;
+}
+
+.hero-section .container4 .box4 {
+    position: absolute;
+    top: 60vh;
+    right: 1vh;
+    max-height: 270px;
+}
+
+.hero-section .container4 p {
+    font-size: 20px; /* Reduce font size for smaller text */
+    color: #000;
+}
+
+
+
+.end {
+    position: fixed;
+    background-color: rgb(217, 217, 217);
+    text-align: center;
+    font-size: larger;
+    height:35px;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
